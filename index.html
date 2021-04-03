@@ -1,11 +1,778 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fleebee</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Tell us about your dream destinations, Fleebee will map a travel plan for you. You can collaborate with your tripmates and add a few more stops. We take care of your travel spending and helps create memories for life." />
+  <meta name="keywords" content="travel,guide,fleebee,travel plan,delhi,tour,tourist,india,destination,ticket booking,advisor,planner,holidays, holiday packages in India, tour packages, vacation packages, holidays in India, india tourism, holiday destinations" />
+  <meta name="news_keywords" content="travel,guide,fleebee,travel plan,delhi,tour,tourist,india,destination,ticket booking,advisor,planner,holidays, holiday packages in India, tour packages, vacation packages, holidays in India, india tourism, holiday destinations" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleebee: Plan less, Travel more</title>
+
+  <!-- SEO -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <link rel="apple-touch-icon" href="./assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+  <link rel="icon" type="image/png" href="./assets/favicon.png"> 
+
+  <link rel="canonical" href="https://www.fleebee.app" />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#fe725a" />
+  <meta name="msapplication-navbutton-color" content="#fe725a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fe725a" />
+  <meta name="copyright" content="fleebee.app" />
+  <meta name="author" content="Fleebee" />
+  <meta http-equiv="X-DNS-Prefetch-Control" content="on" /> 
+
+  <meta property="og:site_name" content="Fleebee" />
+  <meta property="og:title" content="Fleebee: Plan less, Travel more"/>
+  <meta property="og:description" content="Tell us about your dream destinations, Fleebee will map a travel plan for you. You can collaborate with your tripmates and add a few more stops. We take care of your travel spending and helps create memories for life." /> 
+  <meta property="og:url" content="https://www.fleebee.app"/>
+  <meta property="og:image" content="https://www.fleebee.app/assets/favicon.png"/>
+  <meta property="og:image:width" content="auto" />
+  <meta property="og:image:height" content="auto" />
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/linearicons.css" />
+
+
+  <script type="application/ld+json">{"@context" : "https://schema.org", "@type" : "WebSite", "url" : "https://www.fleebee.app", "name" : "Fleebee", "headline":"Plan less, Travel more","keywords":"travel,guide,fleebee,travel plan,delhi,tour,tourist,india,destination,ticket booking,advisor,planner,holidays, holiday packages in India, tour packages, vacation packages, holidays in India, india tourism, holiday destinations"} </script>
+  <script type="application/ld+json">{"@context" : "https://schema.org", "@type" : "Organization", "name" : "Fleebee","url" : "https://www.fleebee.app", "logo": "https://www.fleebee.app/assets/fleebeelogo.jpg","sameAs" : ["https://www.instagram.com/fleebee.app/"]}</script>
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/stylecustom.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
 </head>
-<body>
-  <h2>Site under development! </h2>
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+  <div class="preloader" style="display: none">
+    <span><i class="lnr lnr-sun"></i></span>
+  </div>
+
+  <nav class="mainmenu-area affix" data-spy="affix" data-offset-top="200">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://www.fleebee.app"><img src="./assets/img/logo3.svg" alt="Logo" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="primary_menu">
+        <ul class="nav navbar-nav mainmenu">
+          <li class="navbtn"><a data-id="home_page">Home</a></li>
+          <li class="navbtn"><a data-id="about_page">About</a></li>
+          <li class="navbtn"><a data-id="progress_page">How it works?</a></li>
+          <li class="navbtn"><a data-id="feature_page">Features</a></li>
+          <li class="navbtn"><a data-id="questions_page">FAQ</a></li>
+          <li class="navbtn"><a data-id="home_page" href="./blog/index.html">Blog</a></li>
+          <li class="navbtn"><a data-id="contact_page">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="home-area overlay webpb" id="home_page" data-src="./assets/header-bg6.jpg">
+    <div class="container">
+      <div class="row" style="margin-top: 10%">
+        <div class="col-xs-12 hidden-sm col-md-1"></div>
+        <div class="col-xs-12 hidden-sm col-md-4">
+          <div class="space-60 hidden-xs"></div>
+          <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s" style="
+                visibility: visible;
+                animation-delay: 0.2s;
+                animation-name: fadeInUp;
+                max-width: 300px;
+              ">
+            <img class="webpi" data-src="./assets/Home_screen.png" alt="Fleebee Home" />
+          </figure>
+        </div>
+        <div class="col-xs-12 col-md-7">
+          <div class="space-80 hidden-xs"></div>
+          <h2 class="wow fadeInUp" data-wow-delay="0.4s" style="
+                visibility: visible;
+                animation-delay: 0.4s;
+                animation-name: fadeInUp;
+              ">The all in one travel app
+          </h2>
+          <div class="space-20"></div>
+          <div class="desc wow fadeInUp" data-wow-delay="0.6s" style="
+                visibility: visible;
+                animation-delay: 0.6s;
+                animation-name: fadeInUp;
+              ">
+            <p>
+              Hate travel planning? Tell us what you want and get a personalised travel itinerary in a few clicks.
+            </p>
+          </div>
+          <div class="space-20"></div>
+          <a onclick="toTop('download_area')" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="
+                visibility: visible;
+                animation-delay: 0.8s;cursor: pointer;
+                animation-name: fadeInUp;
+              "><i class="lnr lnr-download"></i>Download App</a>
+          <a onclick="toTop('progress_page')" class="bttn-white wow fadeInUp" data-wow-delay="0.8s" style="
+              visibility: visible;
+              animation-delay: 0.8s;cursor: pointer;
+              animation-name: fadeInUp;
+            "><i class="lnr "></i>How it works</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-padding" id="about_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+          <div class="page-title text-center">
+            <img src="assets/Bee.svg" class="logoimg"  alt="Logo" />
+            <div class="space-20"></div>
+            <h5 class="title">What's Fleebee?</h5>
+            <div class="space-30"></div>
+            <!-- <h3 class="blue-color">
+              Fleebee helps you create and organize your vacations & trips in a few clicks for free.
+            </h3>
+            <div class="space-20"></div> -->
+            <p>
+              Fleebee is an all in one app where you can create, manage and organize your vacations & trips for free. Gone are those days when you had to switch between different apps and tools to manage your itenary, flight tickets, hotel reservations etc. Fleebee let's you manage everything in one place. Fleebee, based on your preferences creates a dynamic itenary which you can share with your friends/family and collaborate with them in real-time to make the best possible itenary. 
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .flex{
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex: 1;
+      align-items: center;
+    }
+
+    .container-works{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .flex1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+
+
+  <section class="progress-area gray-bg" id="progress_page">
+    <div class="col-xs-12 col-md-10 col-md-offset-1" style="padding-top:60px;">
+      <div class="page-title text-center">
+        <h4 class="title">How it works?</h4>
+      </div>
+    </div>
+    <div class="container-works">
+      <div class="row flex">
+        <div class="columnflex flex1" style="margin-left: 14%;">
+          <div class="page-title section-padding ">
+            <div class="space-10"></div>
+            <h4> <span class="wow fadeInUp" data-wow-delay="0.4s" style="
+                  visibility: visible;
+                  animation-delay: 0.4s;
+                  animation-name: fadeInUp;
+                ">
+              Step 1.
+            </span> Questionnaire</h4>
+            <div class="wow fadeInUp" data-wow-delay="0.6s" style="
+                  visibility: visible;
+                  animation-delay: 0.6s;
+                  animation-name: fadeInUp;
+                ">
+              <p>Let us know your travel preference by answering few questions on your budget, timeline, transport options,
+                travel companions etc.</p>
+            </div>
+            <div style="display: flex; " >
+            <h4 class="blah"><Span class="wow fadeInUp"  data-wow-delay="0.4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Step 2.</Span> </h4>
+            <img src="./assets/img/404.png" alt="" class="blah" style= "display: block; 
+              max-width:40px;
+              max-height:30px;
+              width: auto;
+              height: auto;">
+            <h4 style="color:#9c9b9b" class="blah">Error 404. Not Found</h4>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="0.6s"
+              style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+              <p>Yes, you read that right. There is no step 2. You will right away get your itenary after step 1. You
+                will also have access to a wide range of features like trip expense manager, trip memorabilia etc..
+                which are explained below</p>
+            </div>
+            <div class="space-10"></div>
+
+            <div class="space-50"></div>
+            <a href="/#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s" style="
+                  visibility: visible;
+                  animation-delay: 0.8s;
+                  animation-name: fadeInUp;
+                ">Learn More</a>
+          </div>
+        </div>
+        <div class="columnflex flex1 col-md-0 mobilehide" style="align-items: center;">
+           <img src="./assets/gifs/fleebee_app2.gif" style="height:500px;" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .feature-area {
+      width: 90%;
+      margin: 100px auto;
+    }
+
+    .feature-area .title {
+      margin: 0px 0 25px;
+    }
+
+    .feature-area .lnr {
+      font-size: 20px;
+      margin-right: 10px;
+      /* background-color: #ffffff; */
+      padding: 9px;
+      box-shadow: 0px 0px 5px #efac49;
+      border-radius: 50%;
+    }
+
+    .feature-area p {
+      font-size: 14px;
+    }
+
+    .feature-area .midimg {
+      display: flex;
+      justify-content: center
+    }
+
+    .feature-area .mobile-image {
+      width: 250px;
+      position: relative;
+    }
+
+    .feature-area #emptyframe {
+      max-width: 250px;
+    }
+
+    /* .lnr-instagram:before{content:"\f16d"} */
+    .lnr-instagram {   /* first square */
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 25%;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        background: transparent;
+        border: 2px solid white;
+      }
+      .lnr-instagram:before,
+      .lnr-instagram:after {
+        content: "";
+        display: block;
+        position: absolute;
+        margin:auto ; 
+      }
+
+      .lnr-instagram:before {   /* large circle */
+        width: 9px;
+        height: 9px;
+        border-radius: 100%;
+        top: calc(100% / 5);
+        left: calc(100% / 5);
+        background: transparent;
+        border: 2px solid white;
+      }
+      .lnr-instagram:after {     /* small circle */
+        width: 2px;
+        height: 2px;
+        background: white;
+        border-radius: 100%;
+        right: 10%;
+        top: 10%;
+      }
+
+      .logoimg{
+          width: 20%;
+          margin-top: 60px;
+        }
+
+      .mobile-img{
+        display: none;
+      }
+
+
+      @media only screen and (max-width: 667px){
+        .home-area{
+          padding-top: 60px;
+        }
+        #home_page .row{
+          text-align: center;
+        }
+        h1.wow.fadeInUp{
+          font-size: 35px;
+        }
+        .text-center.page-title .title:before, .page-title .title:after {
+          width: 30px;
+        }
+        .logoimg{
+          width: 30%;
+          margin-top: 20px;
+        }
+        .mobilehide{
+          display: none;
+        }
+        .service-box{
+          padding-left: 0;
+        }
+        .mob-textcenter{
+          text-align: center;
+        }
+        .mobile-img{
+          display: flex;
+        }
+      }
+
+  </style>
+
+
+ 
+
+  <section class="feature-area gray-bg" id="feature_page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div class="page-title text-center ">
+            <h4 class="title">Features</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row dark-color">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="service-box wow fadeInUp featureeach" data-item="0" data-wow-delay="0.2s" style="
+                visibility: visible;
+                animation-delay: 0.2s;
+                animation-name: fadeInUp;
+              ">
+            <h4><a href=""><i class="lnr lnr-rocket"></i> Personalized dynamic travel plan</a></h4>
+            <p>Hassle-free dynamic itenary which keeps updating itself in real time based on the time you spend on each
+              tourist spot..... <a href="">Read More</a></p>
+          </div>
+          <div class="space-60"></div>
+          <div class="service-box wow fadeInUp featureeach" data-item="1" data-wow-delay="0.4s" style="
+                visibility: visible;
+                animation-delay: 0.4s;
+                animation-name: fadeInUp;
+              ">
+            <h4><a href=""><i class="lnr lnr-paperclip"></i> Share and customise your trip</a></h4>
+            <p>Share the trip itenary with your tripmates. Add or delete your destinations to perfect your trip. We will
+              optimize the route for you, and bring you the most.</p>
+          </div>
+          <div class="space-60"></div>
+          <div class="service-box wow fadeInUp featureeach" data-item="2" data-wow-delay="0.6s" style="
+                visibility: visible;
+                animation-delay: 0.6s;
+                animation-name: fadeInUp;
+              ">
+            <h4><a href=""><i class="lnr lnr-cloud-download"></i> Trip Expense Manager</a></h4>
+            <p>Track your trip to manage trip spending using the app. Split the expenses with your tripmates and settle
+              the balances on the go.
+
+            </p>
+          </div>
+          <div class="space-60"></div>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-4 midimg">
+          <figure class="mobile-image" style="display: flex; justify-content: center;max-width: 250px ">
+            <!-- <img src="./assets/empty_frame.png" alt="Feature Photo" style="max-width: 250px" /> -->
+            <div id="emptyframe"> <img src="./assets/empty_frame2.png" alt="">
+            </div>
+            <div id="myCarouselF" class="carousel slide" data-ride="carousel">
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="webpi" data-src="./assets/img/screens/screen_travel_plan_details.png" alt="Personalised travel plan">
+                </div>
+
+                <div class="item">
+                  <img class="webpi" data-src="./assets/img/screens/screen_share_with_friends.png" alt="Share with friends">
+                </div>
+
+                <div class="item">
+                  <!--expense_manager -->
+                  <img class="webpi" data-src="./assets/img/screens/screen_trip_expanse.png" alt="Trip expense">
+                </div>
+
+                <div class="item">
+                  <img class="webpi" data-src="./assets/img/screens/all_at_oneplace.png" alt="My profile">
+                </div>
+
+                <div class="item">
+                  <!-- diary -->
+                  <img class="webpi" data-src="./assets/img/screens/screen_fleebee_diary.png" alt="Diary">
+                </div>
+
+                <div class="item">
+                  <img class="webpi" data-src="./assets/img/screens/screen_nearby_me.png" alt="Nearby me">
+                </div>
+
+              </div>
+
+            </div>
+          </figure>
+
+          <!-- <figure class="mobile-image" style="display: flex; justify-content: center; ">
+            <img src="./assets/empty_frame.png" alt="Feature Photo" style="max-width: 250px" />
+          </figure> -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="service-box2 wow fadeInUp featureeach" data-item="3" data-wow-delay="0.2s" style="
+                visibility: visible;
+                animation-delay: 0.2s;
+                animation-name: fadeInUp;
+              ">
+            <h4><a href=""><i class="lnr lnr-clock"></i> Manage everything in one place</a></h4>
+            <p>Upload your flight tickets, hotel bookings etc in the app and find all those in one place inside your
+              app. No more </p>
+          </div>
+          <div class="space-60"></div>
+          <div class="service-box2 wow fadeInUp featureeach" data-item="4" data-wow-delay="0.4s" style="
+          visibility: visible;
+          animation-delay: 0.4s;
+          animation-name: fadeInUp;
+        ">
+            <h4><a href=""><i class="lnr lnr-laptop-phone"></i> Create your travel diary</a></h4>
+            <p>Get a digital travel diary after every trip. You can share it with your friends/families and on social
+              media. Get it printed in the form of an album for keepsake.</p>
+          </div>
+          <div class="space-60"></div>
+          <div class="service-box2 wow fadeInUp featureeach" data-item="5" data-wow-delay="0.6s" style="
+                visibility: visible;
+                animation-delay: 0.6s;
+                animation-name: fadeInUp;
+              ">
+            <h4><a href=""><i class="lnr lnr-cog"></i> Nearby feature</a></h4>
+            <p>Get information about all the nearby eateries, pharmacy, ATMs, washrooms etc at every tourist spot</p>
+          </div>
+          <div class="space-60"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <figure class="mobile-img" style=" justify-content: center;max-width: 250px;margin: auto;">
+      <!-- <img src="./assets/empty_frame.png" alt="Feature Photo" style="max-width: 250px" /> -->
+      <div id="emptyframe"> <img src="./assets/empty_frame2.png" alt="">
+      </div>
+      <div id="myCarouselF" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="webpi" data-src="./assets/img/screens/screen_travel_plan_details.png" alt="Personalised travel plan">
+          </div>
+
+          <div class="item">
+            <img class="webpi" data-src="./assets/img/screens/screen_share_with_friends.png" alt="Share with friends">
+          </div>
+
+          <div class="item">
+            <!--expense_manager -->
+            <img class="webpi" data-src="./assets/img/screens/screen_trip_expanse.png" alt="Trip expense">
+          </div>
+
+          <div class="item">
+            <img class="webpi" data-src="./assets/img/screens/all_at_oneplace.png" alt="My profile">
+          </div>
+
+          <div class="item">
+            <!-- diary -->
+            <img class="webpi" data-src="./assets/img/screens/screen_fleebee_diary.png" alt="Diary">
+          </div>
+
+          <div class="item">
+            <img class="webpi" data-src="./assets/img/screens/screen_nearby_me.png" alt="Nearby me">
+          </div>
+
+        </div>
+
+      </div>
+    </figure>
+
+  </section>
+
+  <div class="download-area overlay webpb" id="download_area" data-src="./assets/header-bg-3.webp">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 mobilehide" >
+          <div id="emptyframe2"> 
+          <img src="./assets/img/icon_on_mobilecover.png" style="max-width: 300px;" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 section-padding mob-textcenter">
+          <h3 class="white-color">Download the app</h3>
+          <div class="space-20"></div>
+          <p>
+            Ready to explore the world like never before. Become a fleebee. Download the app to be part of our private beta phase.
+          </p>
+          <div class="space-60"></div>
+          <a href="/#" class="bttn-white sq"><img src="./assets/appstore-white.png" alt="apple icon" /> Apple
+            Store</a>
+          <a href="/#" class="bttn-white sq"><img src="./assets/playstore-white.png" alt="Play Store Icon" />
+            Play Store</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <section id="questions_page" class="questions-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-title text-center">
+            <h5 class="title">FAQ</h5>
+            <div class="space-60"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="toggole-boxs ui-accordion ui-widget ui-helper-reset" role="tablist">
+            <h3
+              class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+              role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>What are the benefits for a beta customer?
+            </h3>
+            <div
+              class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+              id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false"
+              style="display: block; height: 158px">
+              <p>
+                People who are part of the fleebee's beta phase testing process, will get 6 months of free access to all the premium features of the app once it is launched.
+              </p>
+            </div>
+            <h3
+              class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+              role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>When will the product be launched?
+            </h3>
+            <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4"
+              aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none; height: 158px">
+              <p>
+                The final version of the app is scheduled to be launched in August 2021.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="space-20 hidden visible-xs"></div>
+          <div class="toggole-boxs ui-accordion ui-widget ui-helper-reset" role="tablist">
+            <h3
+              class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+              role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="true" aria-expanded="true" tabindex="0">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Do I have to register to use the app?
+            </h3>
+            <div
+              class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+              id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="false"
+              style="display: block; height: 158px">
+              <p>
+                No. Registeration is required only when you want to have access to premium features like sharing your itenary or creating a travel diary. For basic features like travel itenary it is completely free.
+              </p>
+            </div>
+            <h3
+              class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+              role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false"
+              tabindex="-1">
+              <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Do beta users have to register to use the app?
+            </h3>
+            <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12"
+              aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style="display: none; height: 158px">
+              <p>
+                Only those beta users who wants to avail the 6 month access to premium features of the app after the launch are required to register.
+              </p>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+    {"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name": "What is the return policy?","acceptedAnswer": {"@type": "Answer", "text": "Most "}}]}
+  </script>
+
+  <div class="subscribe-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div class="subscribe-form text-center">
+            <h3 class="blue-color">Subscribe for More Features</h3>
+            <div class="space-20"></div>
+            <form id="mc-form" novalidate="true">
+              <input type="email" class="control" placeholder="Enter your email" required="required" id="mc-email"
+                name="EMAIL" />
+              <button class="bttn-white active" type="submit">
+                <span class="lnr lnr-location"></span> Subscribe
+              </button>
+              <label class="mt10" for="mc-email"></label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-area" id="contact_page">
+    <div class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-title text-center">
+              <h5 class="title">Contact US</h5>
+              <h4 class="dark-color">Find Us By Below Details</h4>
+              <div class="space-60"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="footer-box">
+              <div class="box-icon">
+                <span class="lnr lnr-phone-handset"></span>
+              </div>
+              <p>
+                +91 9872496588 <br />
+                +91 9815235665
+              </p>
+            </div>
+            <div class="space-30 hidden visible-xs"></div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="footer-box">
+              <div class="box-icon">
+                <span class="lnr lnr-envelope"></span>
+              </div>
+              <p>
+                info@fleebee.app <br />
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="footer-box">
+              <div class="box-icon">
+                <span class="lnr lnr-instagram"></span>
+              </div>
+              <p>
+                @fleebee.app <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-5">
+            <span>Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              2021 All rights reserved |
+              <a href="#" target="_blank">Fleebee</a>
+            </span>
+
+            <div class="space-30 hidden visible-xs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0F4X21X95E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-0F4X21X95E");
+  </script>
+
+  <script src="./assets/js/jquery-1.12.4.min.js"></script>
+  <script src="./assets/js/jquery-ui.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+
+  <script src="./assets/js/main.js"></script>
+  <a id="scrollUp" onclick="toTop('home_page')" style="position: fixed; z-index: 2147483647;cursor: pointer;"><i class="lnr lnr-arrow-up"></i></a>
+  <script>
+    function check_webp_feature(feature, callback) {
+        var kTestImages = {
+            lossy: "UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA",
+            lossless: "UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==",
+            alpha: "UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",
+            animation: "UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"
+        };
+        var img = new Image();
+        img.onload = function () {
+            var result = (img.width > 0) && (img.height > 0);
+            callback(feature, result);
+        };
+        img.onerror = function () {
+            callback(feature, false);
+        };
+        img.src = "data:image/webp;base64," + kTestImages[feature];
+    }
+    check_webp_feature('lossy', function (feature, isSupported) {
+        $(function(){
+              var g = document.getElementsByClassName('webpi')
+              for(let i=0;i<g.length;i++){
+                let element = g[i]
+                let srcUrl = element.getAttribute('data-src')
+                if(isSupported){
+                  let scrAr = srcUrl.split(".")
+                  scrAr[scrAr.length - 1] = "webp";
+                  srcUrl = scrAr.join(".");
+                }
+                element.setAttribute('src',srcUrl);
+              }
+              var g = document.getElementsByClassName('webpb')
+              for(let i=0;i<g.length;i++){
+                let element = g[i]
+                let srcUrl = element.getAttribute('data-src')
+                if(isSupported){
+                  let scrAr = srcUrl.split(".")
+                  scrAr[scrAr.length - 1] = "webp";
+                  srcUrl = scrAr.join(".");
+                }
+                element.style.backgroundImage = "url('"+srcUrl+"')";
+              }
+            })
+    })
+  </script>
 </body>
+
 </html>
