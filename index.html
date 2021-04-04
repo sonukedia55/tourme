@@ -31,7 +31,7 @@
   <meta property="og:title" content="Fleebee: Plan less, Travel more"/>
   <meta property="og:description" content="Tell us about your dream destinations, Fleebee will map a travel plan for you. You can collaborate with your tripmates and add a few more stops. We take care of your travel spending and helps create memories for life." /> 
   <meta property="og:url" content="https://www.fleebee.app"/>
-  <meta property="og:image" content="https://www.fleebee.app/assets/favicon.png"/>
+  <meta property="og:image" content="https://www.fleebee.app/assets/fleebee_banner.jpg"/>
   <meta property="og:image:width" content="auto" />
   <meta property="og:image:height" content="auto" />
 
@@ -48,9 +48,22 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/stylecustom.css" />
   <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TMKHQF6');</script>
+  <!-- End Google Tag Manager -->
+
 </head>
 
 <body data-spy="scroll" data-target=".mainmenu-area">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMKHQF6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="preloader" style="display: none">
     <span><i class="lnr lnr-sun"></i></span>
   </div>
@@ -67,7 +80,7 @@
           <li class="navbtn"><a data-id="progress_page">How it works?</a></li>
           <li class="navbtn"><a data-id="feature_page">Features</a></li>
           <li class="navbtn"><a data-id="questions_page">FAQ</a></li>
-          <li class="navbtn"><a data-id="home_page" href="./blog/index.html">Blog</a></li>
+          <!-- <li class="navbtn"><a data-id="home_page" href="./blog/index.html">Blog</a></li> -->
           <li class="navbtn"><a data-id="contact_page">Contact Us</a></li>
         </ul>
       </div>
@@ -348,6 +361,9 @@
         .mobile-img{
           display: flex;
         }
+        .sidepopup{
+          width: 100%;
+        }
       }
 
   </style>
@@ -519,7 +535,7 @@
 
   </section>
 
-  <div class="download-area overlay webpb" id="download_area" data-src="./assets/header-bg-3.webp">
+  <div class="download-area overlay webpb" id="download_area" data-src="./assets/header-bg-3.jpg">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 mobilehide" >
@@ -534,9 +550,9 @@
             Ready to explore the world like never before. Become a fleebee. Download the app to be part of our private beta phase.
           </p>
           <div class="space-60"></div>
-          <a href="/#" class="bttn-white sq"><img src="./assets/appstore-white.png" alt="apple icon" /> Apple
+          <a onclick="showPopUp('download')" class="bttn-white sq" style="cursor: pointer;"><img src="./assets/appstore-white.png" alt="apple icon" /> Apple
             Store</a>
-          <a href="/#" class="bttn-white sq"><img src="./assets/playstore-white.png" alt="Play Store Icon" />
+          <a onclick="showPopUp('download')" class="bttn-white sq" style="cursor: pointer;"><img src="./assets/playstore-white.png" alt="Play Store Icon" />
             Play Store</a>
         </div>
       </div>
@@ -597,7 +613,7 @@
               id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="false"
               style="display: block; height: 158px">
               <p>
-                No. Registeration is required only when you want to have access to premium features like sharing your itenary or creating a travel diary. For basic features like travel itenary it is completely free.
+                No. Registeration is required only when you want to have access to premium features like sharing your itenary or creating a travel diary. For basic features like travel itenary it is completely free and no sigup required.
               </p>
             </div>
             <h3
@@ -621,10 +637,15 @@
   </section>
 
   <script type="application/ld+json">
-    {"@context": "https://schema.org","@type": "FAQPage","mainEntity": [{"@type": "Question","name": "What is the return policy?","acceptedAnswer": {"@type": "Answer", "text": "Most "}}]}
+    {"@context": "https://schema.org","@type": "FAQPage","mainEntity": [
+    {"@type": "Question","name": "What are the benefits for a beta customer on Fleebee?","acceptedAnswer": {"@type": "Answer", "text": "People who are part of the fleebee's beta phase testing process, will get 6 months of free access to all the premium features of the app once it is launched."}}
+    {"@type": "Question","name": "When will the product of Fleebee be launched? ","acceptedAnswer": {"@type": "Answer", "text": "The final version of the app is scheduled to be launched in August 2021."}}
+    {"@type": "Question","name": "Do I have to register to use the Fleebee app?","acceptedAnswer": {"@type": "Answer", "text": "No. Registeration is required only when you want to have access to premium features like sharing your itenary or creating a travel diary. For basic features like travel itenary it is completely free and no signup required. "}}
+    {"@type": "Question","name": "Do beta users have to register to use the Fleebee app? ","acceptedAnswer": {"@type": "Answer", "text": "Only those beta users who wants to avail the 6 month access to premium features of the app after the launch are required to register."}}
+    ]}
   </script>
 
-  <div class="subscribe-area section-padding">
+  <div class="subscribe-area section-padding" id="subscribe-page">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -634,7 +655,7 @@
             <form id="mc-form" novalidate="true">
               <input type="email" class="control" placeholder="Enter your email" required="required" id="mc-email"
                 name="EMAIL" />
-              <button class="bttn-white active" type="submit">
+              <button class="bttn-white active" type="button" onclick="saveSubscribe()">
                 <span class="lnr lnr-location"></span> Subscribe
               </button>
               <label class="mt10" for="mc-email"></label>
@@ -702,7 +723,7 @@
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              2021 All rights reserved |
+               All rights reserved |
               <a href="#" target="_blank">Fleebee</a>
             </span>
 
@@ -712,6 +733,12 @@
       </div>
     </div>
   </footer>
+
+  <div class="sidepopup" id="sidepop" style="display: none;">
+    <div class="closepop"><i class="lnr lnr-cross" onclick="(function(){document.getElementById('sidepop').style.display = 'none';})()"></i></div>
+    <div class="contentpop">
+    </div>
+  </div>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0F4X21X95E"></script>
   <script>
@@ -768,7 +795,7 @@
                   scrAr[scrAr.length - 1] = "webp";
                   srcUrl = scrAr.join(".");
                 }
-                element.style.backgroundImage = `url('${srcUrl}')`;
+                element.style.backgroundImage = "url('"+srcUrl+"')";
               }
             })
     })

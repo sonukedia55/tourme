@@ -814,3 +814,34 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 .form-double .box.last{
     float:right
 }
+.sidepopup {
+    position: fixed;
+    right: 0;
+    min-height: 200px;
+    background: #f44336e6;
+    border-top-left-radius: 4px;
+    color: white;
+    z-index: 3000;
+    width: 40%;
+    bottom: 0;
+    padding: 30px;
+}
+.closepop {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.closepop i:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.contentpop {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    line-height: 26px;
+}
+.contentpop a{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}

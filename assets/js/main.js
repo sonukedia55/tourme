@@ -93,3 +93,24 @@ function toTop(section){
         scrollTop:  $("#"+section).offset().top - 80
     }, 1000);
 }
+window.dataLayer = window.dataLayer || [];
+function showPopUp(type){   
+    if(type=="download"){
+        window.dataLayer.push({'event': 'download-click'});
+        document.querySelector('.contentpop').innerHTML = "Thank you for your interest in Fleebee. We are sorry that all out beta phase slots are taken!<br><br>Please subsribe using your contact, we will reach you with priority when the next wave opens.<br><br><a onclick=toTop('subscribe-page') >Subscribe</a>";
+    }
+    if(type=="subscribe"){
+        document.querySelector('.contentpop').innerHTML = "Thank you for your interset in Fleebee. Your email has been successfully added!";
+    }
+    document.getElementById('sidepop').style.display = 'block';
+}
+
+function saveSubscribe(){
+    var em = document.getElementById('mc-email').value;
+    if(em && em.length){
+        window.dataLayer.push({'event': 'subscribed-click','value':em});
+        document.getElementById('mc-email').value = "";
+        showPopUp("subscribe");
+    }
+   // console.log(em)
+}
