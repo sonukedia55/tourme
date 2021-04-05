@@ -91,8 +91,8 @@
   <header class="home-area overlay webpb" id="home_page" data-src="./assets/header-bg6.jpg">
     <div class="container">
       <div class="row" style="margin-top: 10%">
-        <div class="col-xs-12 hidden-sm col-md-1"></div>
-        <div class="col-xs-12 hidden-sm col-md-4">
+        <div class="col-xs-12 col-sm-1 col-md-1"></div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
           <div class="space-60 hidden-xs"></div>
           <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s" style="
                 visibility: visible;
@@ -103,7 +103,7 @@
             <img class="webpi" data-src="./assets/Home_screen.png" alt="Fleebee Home" />
           </figure>
         </div>
-        <div class="col-xs-12 col-md-7">
+        <div class="col-xs-12 col-sm-7 col-md-7">
           <div class="space-80 hidden-xs"></div>
           <h2 class="wow fadeInUp" data-wow-delay="0.4s" style="
                 visibility: visible;
@@ -180,8 +180,23 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
+    @media only screen and (max-width: 667px){
+    .flex2{
+      display: flex;
+      justify-content: center;
+
+    }
+  
+
+    .flex3{
+      margin-left: 10px;
+    }
+
+}
   </style>
 
 
@@ -193,7 +208,7 @@
     </div>
     <div class="container-works">
       <div class="row flex">
-        <div class="columnflex flex1" style="margin-left: 14%;">
+        <div class="columnflex flex1 " style="margin-left:14%">
           <div class="page-title section-padding ">
             <div class="space-10"></div>
             <h4> <span class="wow fadeInUp" data-wow-delay="0.4s" style="
@@ -214,7 +229,7 @@
             <div style="display: flex; " >
             <h4 class="blah"><Span class="wow fadeInUp"  data-wow-delay="0.4s"
               style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Step 2.</Span> </h4>
-            <img src="./assets/img/404.png" alt="" class="blah" style= "display: block; 
+            <img src="./assets/img/404.png" alt="" class="blah blah2" style= "display: block; 
               max-width:40px;
               max-height:30px;
               width: auto;
@@ -229,12 +244,13 @@
             </div>
             <div class="space-10"></div>
 
-            <div class="space-50"></div>
-            <a href="/#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s" style="
+            <div class="space-50 "></div>
+            <div class="flex2"><a href="#" class="bttn-default wow fadeInUp " data-wow-delay="0.8s" style="
                   visibility: visible;
                   animation-delay: 0.8s;
                   animation-name: fadeInUp;
                 ">Learn More</a>
+                </div>
           </div>
         </div>
         <div class="columnflex flex1 col-md-0 mobilehide" style="align-items: center;">
@@ -389,7 +405,7 @@
               ">
             <h4><a href=""><i class="lnr lnr-rocket"></i> Personalized dynamic travel plan</a></h4>
             <p>Hassle-free dynamic itenary which keeps updating itself in real time based on the time you spend on each
-              tourist spot..... <a href="">Read More</a></p>
+              tourist spot.</p>
           </div>
           <div class="space-60"></div>
           <div class="service-box wow fadeInUp featureeach" data-item="1" data-wow-delay="0.4s" style="
@@ -397,9 +413,9 @@
                 animation-delay: 0.4s;
                 animation-name: fadeInUp;
               ">
-            <h4><a href=""><i class="lnr lnr-paperclip"></i> Share and customise your trip</a></h4>
-            <p>Share the trip itenary with your tripmates. Add or delete your destinations to perfect your trip. We will
-              optimize the route for you, and bring you the most.</p>
+            <h4><a href=""><i class="lnr lnr-paperclip"></i> Share and customise</a></h4>
+            <p>Share the trip itenary with your tripmates and collaborate in real-time to make the perfect plan. Add or delete places from the itenary and we will
+              optimize the route for you bringing you the most.</p>
           </div>
           <div class="space-60"></div>
           <div class="service-box wow fadeInUp featureeach" data-item="2" data-wow-delay="0.6s" style="
@@ -466,8 +482,8 @@
                 animation-name: fadeInUp;
               ">
             <h4><a href=""><i class="lnr lnr-clock"></i> Manage everything in one place</a></h4>
-            <p>Upload your flight tickets, hotel bookings etc in the app and find all those in one place inside your
-              app. No more </p>
+            <p>No more switching between apps. Upload your flight tickets, hotel bookings etc in the app and manage all those in one place inside your
+              app. </p>
           </div>
           <div class="space-60"></div>
           <div class="service-box2 wow fadeInUp featureeach" data-item="4" data-wow-delay="0.4s" style="
@@ -543,7 +559,7 @@
           <img src="./assets/img/icon_on_mobilecover.png" style="max-width: 300px;" alt="">
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 section-padding mob-textcenter">
+        <div class="col-xs-12 col-md-6 col-sm-6 section-padding mob-textcenter">
           <h3 class="white-color">Download the app</h3>
           <div class="space-20"></div>
           <p>
@@ -625,7 +641,7 @@
             <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12"
               aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style="display: none; height: 158px">
               <p>
-                Only those beta users who wants to avail the 6 month access to premium features of the app after the launch are required to register.
+                Only those beta users who want to avail the 6 month access to the premium features of the app after the launch are required to register.
               </p>
             </div>
             

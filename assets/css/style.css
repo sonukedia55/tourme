@@ -5,9 +5,9 @@
 
 :root{
     --theme: linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131));
-    /* --theme: linear-gradient(to right,rgb(79, 88, 155),rgb(67, 139, 145)); */
+    /* --theme: #F75940; */
     --btn:linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131));
-    /* --btn:linear-gradient(to right,rgb(79, 88, 155),rgb(67, 139, 145)); */
+    /* --btn:#F75940; */
 
 
     --headings: rgb(254, 114, 90);
@@ -335,7 +335,7 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
 .home-area .mobile-image{
     margin-right:0;
     margin-left:0;
-    margin-bottom:-158px
+    margin-bottom:-158px;
 }
 .progress-area{
     background-repeat:no-repeat;
@@ -356,12 +356,14 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
     margin-right: 10px;
 }
 
+
 @media only screen and (min-width: 767px){
     .proressrow{
         display: flex;
         justify-content: space-between;
     }
 }
+
 
 
 
