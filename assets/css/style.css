@@ -416,10 +416,6 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
     padding-right:50px;
 }
 
-.service-box:hover,.service-box2:hover {
-    background-color: var(--theme);
-}
-
 
 .service-box h4{
     margin-bottom:10px
