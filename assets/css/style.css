@@ -4,10 +4,10 @@
 }
 
 :root{
-    --theme: linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131));
-    /* --theme: #F75940; */
-    --btn:linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131));
-    /* --btn:#F75940; */
+    /* --theme: linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131)); */
+    --theme: #F75940;
+    /* --btn:linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131)); */
+    --btn:#F75940;
 
 
     --headings: rgb(254, 114, 90);
@@ -238,6 +238,25 @@ input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus
     z-index: 900;
 }
 
+#dialogdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dialogdiv input{
+    padding: 6px 10px;
+    border: solid 1px grey;
+    border-radius: 2px;
+    font-size: 14px;
+    margin: 0 0 0 5px;
+}
+#dialogdiv a{
+    background: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+}
 
 
 .mainmenu-area{

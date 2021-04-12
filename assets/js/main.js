@@ -97,7 +97,7 @@ window.dataLayer = window.dataLayer || [];
 function showPopUp(type){   
     if(type=="download"){
         window.dataLayer.push({'event': 'download-click'});
-        document.querySelector('.contentpop').innerHTML = "Thank you for your interest in Fleebee. We are sorry that all out beta phase slots are taken!<br><br>Please subsribe using your contact, we will reach you with priority when the next wave opens.<br><br><a onclick=toTop('subscribe-page') >Subscribe</a>";
+        document.querySelector('.contentpop').innerHTML = "Thank you for your interest in Fleebee. We are sorry that all out beta phase slots are taken!<br><br>Please subsribe using your contact, we will reach you with priority when the next wave opens.<br><br><div id='dialogdiv'><input placeholder='Enter email Id'/><a onclick=saveSubscribe('dialog') >Subscribe</a></div>";
     }
     if(type=="subscribe"){
         document.querySelector('.contentpop').innerHTML = "Thank you for your interset in Fleebee. Your email has been successfully added!";
@@ -105,12 +105,18 @@ function showPopUp(type){
     document.getElementById('sidepop').style.display = 'block';
 }
 
-function saveSubscribe(){
-    var em = document.getElementById('mc-email').value;
+function saveSubscribe(source){
+    var elm = source ? document.querySelector('#dialogdiv input') : document.getElementById('mc-email');
+    var em = elm.value;
     if(em && em.length){
         window.dataLayer.push({'event': 'subscribed-click','value':em});
-        document.getElementById('mc-email').value = "";
-        showPopUp("subscribe");
+        elm.value = "";
+        fetch('https://enw1ui7mxo5aopg.m.pipedream.net', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({em})
+            }).then(res => { showPopUp("subscribe");});
     }
-   // console.log(em)
 }
