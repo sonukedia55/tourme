@@ -4,10 +4,10 @@
 }
 
 :root{
-    /* --theme: linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131)); */
-    --theme: #F75940;
-    /* --btn:linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131)); */
-    --btn:#F75940;
+    --theme: linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131));
+    /* --theme: #F75940; */
+    --btn:linear-gradient(rgb(254, 114, 90),rgb(229, 101, 131));
+    /* --btn:#F75940; */
 
 
     --headings: rgb(254, 114, 90);
