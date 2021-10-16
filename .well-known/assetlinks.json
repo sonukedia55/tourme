@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.fleebee.androidapp",
+    "sha256_cert_fingerprints":
+    ["16:0E:17:09:47:F0:A4:5F:17:89:2B:2F:CE:0F:14:D3:93:D0:04:B0:4B:E8:18:1E:DD:40:C4:70:76:2E:38:EA"]
+  }
+}]
